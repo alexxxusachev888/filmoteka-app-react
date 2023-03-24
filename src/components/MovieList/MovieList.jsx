@@ -13,7 +13,6 @@ import {
     Genres, 
     ReleaseDate} from './MovieList.styled';
 
-
 const MovieList = ({movieArr = [], location})=> {
     const BASE_URL_IMG = 'https://image.tmdb.org/t/p/w500';
 
