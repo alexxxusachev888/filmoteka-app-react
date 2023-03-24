@@ -22,7 +22,7 @@ const MovieList = ({movieArr = [], location})=> {
             {movieArr.map(({id, original_title, original_name, vote_average, poster_path, genre_ids, release_date, first_air_date})=> {
                 return (
                     <MovieCard key={id}>
-                        <NavLink to={`movies/${id}`} state={{from: location}} >
+                        <NavLink to={`/movies/${id}`} state={{from: location}} >
                             <Img src={`${BASE_URL_IMG}${poster_path}`} alt={original_title}/>
                             <DescrWrapper>
                                 <Title>{original_title || original_name}</Title>
