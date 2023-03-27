@@ -25,7 +25,7 @@ const MovieList = ({movieArr = [], location})=> {
                             <Img src={`${BASE_URL_IMG}${poster_path}`} alt={original_title}/>
                             <DescrWrapper>
                                 <Title>{original_title || original_name}</Title>
-                                <VoteAverege>{vote_average.toFixed(1)}</VoteAverege>
+                                <VoteAverege>{vote_average ? vote_average.toFixed(1) : "unknown"}</VoteAverege>
                                 <InnerWrapper>
                                     <Genres>{genresConvertor(genre_ids).join(', ')}</Genres>
                                     <ReleaseDate>| {getYear(new Date(release_date || first_air_date))}</ReleaseDate>

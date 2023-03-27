@@ -14,7 +14,7 @@ const Reviews = ()=> {
     const foundMovieReviews = async (movId) => {
         try {
           const movieRvs = await fetchMovieReviews(movId);
-          setReviews(movieRvs);
+          setReviews(Array.isArray(movieRvs) ? movieRvs : []);
 
         } catch (error) {
           console.log(error);
