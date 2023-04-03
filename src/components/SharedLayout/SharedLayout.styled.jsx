@@ -48,6 +48,9 @@ export const Header = styled.header`
     height: 130px;
 
     @media screen and (min-width: 320px) {
+        position: relative;
+        margin-left: -30px;
+        margin-right: -20px;
         padding: 10px 50px;
         justify-content: center;
         flex-wrap: wrap;
@@ -93,6 +96,9 @@ export const Footer = styled.footer`
     background-color: ${(prop)=> prop.theme.footer};
 
     @media screen and (min-width: 320px) {
+        position: relative;
+        margin-left: -30px;
+        margin-right: -20px;
         p {
             text-align: center;
             line-height: 30px;
